@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace OriginTrials.Pages;
 
@@ -14,5 +13,7 @@ public class PopupModel : PageModel
 
     public void OnGet()
     {
+        // For localhost only
+        HttpContext.Response.Headers.Add("origin-trial", "An7ZwdRCMPWw6SzSNARtp608Rn+RJm2wslsIpstPa58tN//rGpkC/oDbk6NBaKfcXo8Lid3icaV1435D3vLAjwIAAABWeyJvcmlnaW4iOiJodHRwczovL2xvY2FsaG9zdDo3MTMwIiwiZmVhdHVyZSI6IkhUTUxQb3B1cEF0dHJpYnV0ZSIsImV4cGlyeSI6MTY4MDY1Mjc5OX0=");
     }
 }
