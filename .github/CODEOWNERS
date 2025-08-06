@@ -1,0 +1,6 @@
+# Code owners for this repository
+# This file defines who should be requested for review on pull requests
+# including Dependabot PRs, replacing the deprecated reviewers field in dependabot.yml
+
+# Default owner for all files
+* @SIkebe
